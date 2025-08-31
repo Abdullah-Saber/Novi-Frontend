@@ -1,0 +1,84 @@
+/* Profile Section Styles */
+.profile-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 2rem 50px; /* Adjust padding for navbar */
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(90, 64, 55, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.info-group {
+    margin-bottom: 1rem;
+}
+
+.info-group label {
+    font-weight: 600;
+    color: #5a4037;
+    margin-right: 1rem;
+}
+
+.info-group span {
+    font-size: 1.1rem;
+    color: #6b4e42;
+}
+
+.subsection-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #5a4037;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-actions {
+    margin-top: 2rem;
+}
+
+/* Cart Icon */
+.cart-icon {
+    position: relative;
+    color: #5a4037;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cart-icon svg {
+    transition: transform 0.3s ease;
+}
+.cart-icon:hover svg {
+    transform: scale(1.1);
+}
+#cart-count {
+    background: #8b6f47;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    transition: transform 0.2s ease-in-out;
+}
+

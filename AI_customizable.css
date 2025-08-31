@@ -1,0 +1,238 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts & Base */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d4a574 0%, #e8c3a0 50%, #c8a882 100%);
+    color: #5a4037;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(212, 165, 116, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(200, 168, 130, 0.98);
+    box-shadow: 0 4px 20px rgba(90, 64, 55, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: #5a4037;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(90, 64, 55, 0.3);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5a4037;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(90, 64, 55, 0.2);
+}
+
+.navbar a:hover, .navbar a.active {
+    background: #404A36;
+    color: #f5e9d7;
+  }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #5a4037;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Cart Icon */
+.cart-icon {
+    position: relative;
+    color: #5a4037;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cart-icon svg {
+    transition: transform 0.3s ease;
+}
+.cart-icon:hover svg {
+    transform: scale(1.1);
+}
+#cart-count {
+    background: #8b6f47;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    transition: transform 0.2s ease-in-out;
+}
+  
+  /* Main Layout */
+  .ai-wrapper {
+
+    margin-top: 80px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 3rem;
+    gap: 2rem;
+    height: 85vh;
+  }
+  
+  /* Input Section */
+  .ai-input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 1.5rem;
+    padding: 4rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .ai-input h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5c3a1e;
+  }
+  .ai-input p {
+    color: #6b4a2f;
+  }
+  .ai-input textarea {
+    width: 100%;
+    min-height: 80px;
+    border-radius: 1rem;
+    border: none;
+    padding: 2rem;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    background: rgba(255,255,255,0.7);
+    color: #5c3a1e;
+  }
+  .ai-input button {
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    background: #5c3a1e;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .ai-input button:hover {
+    background: #fff;
+    color: #5c3a1e;
+    border: 1px solid #5c3a1e;
+  }
+  
+  /* Output Section */
+  .ai-output {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .placeholder {
+    color: #5c3a1e;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+
+#generatedImage {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+#downloadBtn {
+  padding: 0.7rem 4rem;
+  background: #5c3a1e;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+#downloadBtn:hover {
+  background: #5c3a1e;
+  color: #fff;
+}
+ 
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .ai-wrapper {
+      flex-direction: column;
+    }
+  }
+  

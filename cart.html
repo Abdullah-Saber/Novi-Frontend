@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Novi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Novi</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="ready-design.html" class="nav-link active">Ready Designs</a></li>
+                <li><a href="AI_customizable.html" class="nav-link">AI Customizable</a></li>
+                <li><a href="semi-customizable.html" class="nav-link">Semi-Customizable</a></li>
+                <li><a href="about_us.html" class="nav-link">About Us</a></li>
+            </ul>
+            <a href="cart.html" class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C17 18.1046 17.8954 19 19 19C20.1046 19 21 18.1046 21 17C21 15.8954 20.1046 15 19 15C17.8954 15 17 15.8954 17 17ZM7 19C5.89543 19 5 18.1046 5 17C5 15.8954 5.89543 15 7 15C8.10457 15 9 15.8954 9 17C9 18.1046 8.10457 19 7 19Z" stroke="#5a4037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span id="cart-count">0</span>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="cart" class="cart-section">
+        <h2 class="section-title">Your Cart</h2>
+        <div class="cart-items"></div>
+        <div class="cart-summary">
+            <h3>Total: <span id="cart-total">0 EP</span></h3>
+            <button id="confirm-order" class="confirm-btn">Confirm Order</button>
+            <button id="clear-cart" class="decline-btn">Clear Cart</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Novi. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
